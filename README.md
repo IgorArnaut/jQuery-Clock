@@ -1,2 +1,2 @@
-# jQuery-Clock
+# jQuery Clock
 A jQuery calculator.
