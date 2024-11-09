@@ -1,7 +1,8 @@
+import $ from "jquery";
 import { getH, getM, getS } from "./helpers";
 
-window.addEventListener("load", () => {
-  const clock = document.getElementById("clock");
+$(window).on("load", () => {
+  const clock = $("#clock");
 
   setInterval(() => {
     const now = new Date();
@@ -9,6 +10,6 @@ window.addEventListener("load", () => {
     const m = getM(now);
     const s = getS(now);
     const time = `${h}:${m}:${s}`;
-    clock.innerText = time;
+    clock.text(time);
   }, 1000);
 });
